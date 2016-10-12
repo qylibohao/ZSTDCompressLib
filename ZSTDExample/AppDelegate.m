@@ -23,11 +23,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     NSData * fileData =  UIImagePNGRepresentation([UIImage imageNamed:@"login"]);
 
-    NSData* comData = [CompressHelper compressData:fileData];
-    NSData* deData = [CompressHelper decompressData:comData];
     
-    UIImage *image = [UIImage imageWithData:deData];
-
+    NSData* comData = [CompressHelper compressData:fileData];
+    NSLog(@"压缩完成");
+    NSData* deData = [CompressHelper decompressData:comData];
+    NSLog(@"解压缩完成");
+    
+    //UIImage *image = [UIImage imageWithData:deData];
     
     UIViewController* view = [[UIViewController alloc]init];
     self.window.rootViewController = view;

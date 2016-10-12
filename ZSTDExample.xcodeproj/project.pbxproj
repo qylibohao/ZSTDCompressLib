@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE1600051D9A4B5000735D58 /* libzstd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1600031D9A4B5000735D58 /* libzstd.a */; };
-		CE16000A1D9A64C200735D58 /* simple_compression.c in Sources */ = {isa = PBXBuildFile; fileRef = CE1600061D9A64C200735D58 /* simple_compression.c */; };
-		CE1600101D9A675900735D58 /* CompressHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE16000F1D9A675900735D58 /* CompressHelper.mm */; };
+		CE15D8D71DAE57D20069E464 /* CompressHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE15D8D01DAE57D10069E464 /* CompressHelper.mm */; };
+		CE15D8D81DAE57D20069E464 /* libzstd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE15D8D11DAE57D10069E464 /* libzstd.a */; };
+		CE15D8DA1DAE57D20069E464 /* simple_compression.c in Sources */ = {isa = PBXBuildFile; fileRef = CE15D8D31DAE57D10069E464 /* simple_compression.c */; };
+		CE15D8DB1DAE57D20069E464 /* simple_decompression.c in Sources */ = {isa = PBXBuildFile; fileRef = CE15D8D41DAE57D20069E464 /* simple_decompression.c */; };
+		CE15D8DC1DAE57D20069E464 /* streaming_compression.c in Sources */ = {isa = PBXBuildFile; fileRef = CE15D8D51DAE57D20069E464 /* streaming_compression.c */; };
+		CE15D8DE1DAE57E50069E464 /* login@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE15D8DD1DAE57E50069E464 /* login@3x.png */; };
 		CE16FFD11D9A4B3300735D58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FFD01D9A4B3300735D58 /* main.m */; };
 		CE16FFD41D9A4B3300735D58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FFD31D9A4B3300735D58 /* AppDelegate.m */; };
 		CE16FFD71D9A4B3300735D58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FFD61D9A4B3300735D58 /* ViewController.m */; };
@@ -17,8 +20,6 @@
 		CE16FFDF1D9A4B3300735D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE16FFDD1D9A4B3300735D58 /* LaunchScreen.storyboard */; };
 		CE16FFEA1D9A4B3400735D58 /* ZSTDExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FFE91D9A4B3400735D58 /* ZSTDExampleTests.m */; };
 		CE16FFF51D9A4B3400735D58 /* ZSTDExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE16FFF41D9A4B3400735D58 /* ZSTDExampleUITests.m */; };
-		CEFC00671D9B6D71003B2121 /* login@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFC00661D9B6D71003B2121 /* login@3x.png */; };
-		CEFC00691D9B753C003B2121 /* simple_decompression.c in Sources */ = {isa = PBXBuildFile; fileRef = CEFC00681D9B753C003B2121 /* simple_decompression.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE1600031D9A4B5000735D58 /* libzstd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzstd.a; sourceTree = "<group>"; };
-		CE1600041D9A4B5000735D58 /* zstd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zstd.h; sourceTree = "<group>"; };
-		CE1600061D9A64C200735D58 /* simple_compression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simple_compression.c; sourceTree = "<group>"; };
-		CE16000E1D9A675900735D58 /* CompressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressHelper.h; sourceTree = "<group>"; };
-		CE16000F1D9A675900735D58 /* CompressHelper.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; fileEncoding = 4; path = CompressHelper.mm; sourceTree = "<group>"; };
+		CE15D8CF1DAE57D10069E464 /* CompressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressHelper.h; sourceTree = "<group>"; };
+		CE15D8D01DAE57D10069E464 /* CompressHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CompressHelper.mm; sourceTree = "<group>"; };
+		CE15D8D11DAE57D10069E464 /* libzstd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzstd.a; sourceTree = "<group>"; };
+		CE15D8D31DAE57D10069E464 /* simple_compression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simple_compression.c; sourceTree = "<group>"; };
+		CE15D8D41DAE57D20069E464 /* simple_decompression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simple_decompression.c; sourceTree = "<group>"; };
+		CE15D8D51DAE57D20069E464 /* streaming_compression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streaming_compression.c; sourceTree = "<group>"; };
+		CE15D8D61DAE57D20069E464 /* zstd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zstd.h; sourceTree = "<group>"; };
+		CE15D8DD1DAE57E50069E464 /* login@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login@3x.png"; sourceTree = "<group>"; };
 		CE16FFCC1D9A4B3300735D58 /* ZSTDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE16FFD01D9A4B3300735D58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE16FFD21D9A4B3300735D58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +63,6 @@
 		CE16FFF01D9A4B3400735D58 /* ZSTDExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSTDExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE16FFF41D9A4B3400735D58 /* ZSTDExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSTDExampleUITests.m; sourceTree = "<group>"; };
 		CE16FFF61D9A4B3400735D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEFC00661D9B6D71003B2121 /* login@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login@3x.png"; path = "LibZstd/login@3x.png"; sourceTree = "<group>"; };
-		CEFC00681D9B753C003B2121 /* simple_decompression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simple_decompression.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1600051D9A4B5000735D58 /* libzstd.a in Frameworks */,
+				CE15D8D81DAE57D20069E464 /* libzstd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,13 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE1600021D9A4B5000735D58 /* LibZstd */ = {
+		CE15D8CE1DAE57D10069E464 /* ZSTDCompressLib */ = {
 			isa = PBXGroup;
 			children = (
-				CE1600031D9A4B5000735D58 /* libzstd.a */,
-				CE1600041D9A4B5000735D58 /* zstd.h */,
+				CE15D8CF1DAE57D10069E464 /* CompressHelper.h */,
+				CE15D8D01DAE57D10069E464 /* CompressHelper.mm */,
+				CE15D8D11DAE57D10069E464 /* libzstd.a */,
+				CE15D8D31DAE57D10069E464 /* simple_compression.c */,
+				CE15D8D41DAE57D20069E464 /* simple_decompression.c */,
+				CE15D8D51DAE57D20069E464 /* streaming_compression.c */,
+				CE15D8D61DAE57D20069E464 /* zstd.h */,
 			);
-			path = LibZstd;
+			path = ZSTDCompressLib;
 			sourceTree = "<group>";
 		};
 		CE16FFC31D9A4B3300735D58 = {
@@ -121,17 +128,13 @@
 		CE16FFCE1D9A4B3300735D58 /* ZSTDExample */ = {
 			isa = PBXGroup;
 			children = (
-				CEFC00661D9B6D71003B2121 /* login@3x.png */,
-				CE1600021D9A4B5000735D58 /* LibZstd */,
+				CE15D8CE1DAE57D10069E464 /* ZSTDCompressLib */,
 				CE16FFD21D9A4B3300735D58 /* AppDelegate.h */,
 				CE16FFD31D9A4B3300735D58 /* AppDelegate.m */,
 				CE16FFD51D9A4B3300735D58 /* ViewController.h */,
 				CE16FFD61D9A4B3300735D58 /* ViewController.m */,
-				CE1600061D9A64C200735D58 /* simple_compression.c */,
-				CEFC00681D9B753C003B2121 /* simple_decompression.c */,
-				CE16000E1D9A675900735D58 /* CompressHelper.h */,
-				CE16000F1D9A675900735D58 /* CompressHelper.mm */,
 				CE16FFDB1D9A4B3300735D58 /* Assets.xcassets */,
+				CE15D8DD1DAE57E50069E464 /* login@3x.png */,
 				CE16FFDD1D9A4B3300735D58 /* LaunchScreen.storyboard */,
 				CE16FFE01D9A4B3300735D58 /* Info.plist */,
 				CE16FFCF1D9A4B3300735D58 /* Supporting Files */,
@@ -276,7 +279,7 @@
 			files = (
 				CE16FFDF1D9A4B3300735D58 /* LaunchScreen.storyboard in Resources */,
 				CE16FFDC1D9A4B3300735D58 /* Assets.xcassets in Resources */,
-				CEFC00671D9B6D71003B2121 /* login@3x.png in Resources */,
+				CE15D8DE1DAE57E50069E464 /* login@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE16000A1D9A64C200735D58 /* simple_compression.c in Sources */,
 				CE16FFD71D9A4B3300735D58 /* ViewController.m in Sources */,
+				CE15D8D71DAE57D20069E464 /* CompressHelper.mm in Sources */,
+				CE15D8DA1DAE57D20069E464 /* simple_compression.c in Sources */,
 				CE16FFD41D9A4B3300735D58 /* AppDelegate.m in Sources */,
-				CE1600101D9A675900735D58 /* CompressHelper.mm in Sources */,
+				CE15D8DC1DAE57D20069E464 /* streaming_compression.c in Sources */,
 				CE16FFD11D9A4B3300735D58 /* main.m in Sources */,
-				CEFC00691D9B753C003B2121 /* simple_decompression.c in Sources */,
+				CE15D8DB1DAE57D20069E464 /* simple_decompression.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +480,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZSTDExample/LibZstd",
+					"$(PROJECT_DIR)/ZSTDExample/ZSTDCompressLib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-Objc";
@@ -495,6 +500,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZSTDExample/LibZstd",
+					"$(PROJECT_DIR)/ZSTDExample/ZSTDCompressLib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-Objc";
